@@ -32,7 +32,7 @@
 
 .bubble {
   background: #103C48;
-  border: 1px solid #cbd2da;
+  /*border: 1px solid #cbd2da;*/
   position: absolute;
   border-radius: 50%;
   width: 2rem;
@@ -40,7 +40,7 @@
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none; /* Remove pointer events on Bubble so user can click on the actual thumb beaneath it!  */
-  color: transparent;
+  color: rgba(255,255,255,.1);
   display: grid;
   place-items: center; /*  Place the number on the center  */
   font-weight: bold;
@@ -51,7 +51,7 @@
 .range-wrap:hover .bubble,
 .range-wrap:focus .bubble {
   color: #fff;
-  transform: translateY(-50%) scale(1.5);
+  transform: translateY(-50%) scale(1.2);
   padding: 0.1em;
 }
 

@@ -7,12 +7,12 @@ let timer;
 let breathTimer;
 let holdTimer
 
-function startRelax(){
+function initApp(){
   start.classList.add('hide')
   document.querySelector('.range-wrap').classList.add('show')
-  setTime(7)
+  startApp(7)
 }
-function setTime(input){
+function startApp(input){
 
   let totalTime = input * 1000
   resetAnimation();
@@ -61,7 +61,7 @@ function resetAnimation () {
 input.addEventListener('change', (e) => {
   const input = e.target.value;
   console.log(input)
-  setTime(input)
+  startApp(input)
 })
 
-start.addEventListener('mousedown', startRelax)
+start.addEventListener('mousedown', initApp)
